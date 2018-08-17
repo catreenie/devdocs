@@ -12,7 +12,7 @@ An attempt to generate and write the `sitemap.xml` file to the root directory re
 Please make sure that "/" is writable by the web-server.
 ```
 
-With {{site.data.var.ece}}, you can only write to specific directories, such as `var`, `pub/media`, `pub/static`, or `app/etc`. When you generate the `sitemap.xml` file using the Admin panel, you must specify the `/media/` path.
+With {{site.data.var.ece}}, you can only write to specific directories, such as `var`, `pub/media`, `pub/static`, or `app/etc`. When you generate the `sitemap.xml` file using the Admin panel, you must specify the `pub/media/` path.
 
 You do not have to generate a `robots.txt` because it generates on demand and stores the contents in the database. It does not create a file, but you can view the content in your browser with the url: `<domain.your.project>/robots.txt`
 
@@ -26,7 +26,8 @@ This requires ECE-Tools version 2002.0.12 and later with an updated `.magento.ap
 1.  In the _New Site Map_ view, enter the following values:
 
     -  **Filename**:`sitemap.xml`
-    -  **Path**:`/media/`
+    -  **Path**:`/pub/media/`
+    
 
 1.  Click **Save & Generate**. The new site map becomes available in the _Site Map_ grid.
 1.  Click the path in the `Link for Google` column.
